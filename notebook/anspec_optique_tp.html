@@ -5,9 +5,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2. Réalisation pratique &#8212; TP Analyse spectrale</title>
+    <title>4. Réalisation pratique &#8212; TP Analyse spectrale</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -34,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -44,7 +41,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -57,25 +54,16 @@
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/tp4_analspec/notebook/anspec_optique_tp.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="1. Wobulation en pratique" href="anspec_elec_wobulation.html" />
-    <link rel="prev" title="1. Etude préliminaire" href="anspec_optique_preliminaire.html" />
-
+    <link rel="next" title="5. Wobulation en pratique" href="anspec_elec_wobulation.html" />
+    <link rel="prev" title="3. Etude préliminaire" href="anspec_optique_preliminaire.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-<!-- Opengraph tags -->
-<meta property="og:url"         content="https://pcsi3physiquestan.github.io/tp4_analspec/notebook/anspec_optique_tp.html" />
-<meta property="og:type"        content="article" />
-<meta property="og:title"       content="Réalisation pratique" />
-<meta property="og:description" content="Réalisation pratique  Un goniomètre est un appareil qui sert à effectuer des mesures d’angles (de gônia angle&#39;&#39; et metron mesure, évaluation’’). Il possède une " />
-
-
-<meta name="twitter:card" content="summary" />
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -84,30 +72,30 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
-  
-  
-  <h1 class="site-logo" id="site-title">TP Analyse spectrale</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">TP Analyse spectrale</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../tp4_analspec.html">
    Analyse spectrale
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Analyse d'un signal électrique
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="anspec_elec_preliminaire.html">
    1. Etude préliminaire
@@ -119,36 +107,37 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Analyse d'un signal lumineux
  </span>
 </p>
-<ul class="current nav sidenav_l1">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="anspec_optique_preliminaire.html">
-   1. Etude préliminaire
+   3. Etude préliminaire
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   2. Réalisation pratique
+   4. Réalisation pratique
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Annexes
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="anspec_elec_wobulation.html">
-   1. Wobulation en pratique
+   5. Wobulation en pratique
   </a>
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -201,12 +190,12 @@
 
             <!-- Source interaction buttons -->
 
-
             <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -232,75 +221,73 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i>
-            Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#reglage-du-goniometre-30-min">
-   2.1. Réglage du goniomètre (30 min)
+   4.1. Réglage du goniomètre (30 min)
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#reglage-de-la-lunette-autocollimatrice">
-     2.1.1. Réglage de la lunette autocollimatrice
+     4.1.1. Réglage de la lunette autocollimatrice
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#reglage-du-collimateur">
-     2.1.2. Réglage du collimateur
+     4.1.2. Réglage du collimateur
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#direction-du-faisceau-incident">
-     2.1.3. Direction du faisceau incident
+     4.1.3. Direction du faisceau incident
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#orientation-de-la-plateforme-et-de-la-lunette">
-     2.1.4. Orientation de la plateforme et de la lunette
+     4.1.4. Orientation de la plateforme et de la lunette
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#goniometre-a-prisme">
-   2.2. Goniomètre à prisme
+   4.2. Goniomètre à prisme
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#mesure-de-l-angle-a">
-     2.2.1. Mesure de l’angle A
+     4.2.1. Mesure de l’angle A
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#observation-qualitative-du-minimum-de-deviation">
-     2.2.2. Observation qualitative du minimum de déviation
+     4.2.2. Observation qualitative du minimum de déviation
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#minimum-de-deviation-et-longueur-d-onde">
-     2.2.3. Minimum de déviation et longueur d’onde
+     4.2.3. Minimum de déviation et longueur d’onde
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#application-a-la-spectrometrie">
-     2.2.4. Application à la spectrométrie
+     4.2.4. Application à la spectrométrie
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#augmentation-de-la-resolution-utilisation-d-un-reseau">
-   2.3. Augmentation de la résolution: utilisation d’un réseau
+   4.3. Augmentation de la résolution: utilisation d’un réseau
   </a>
  </li>
 </ul>
 
-        </nav>
-        
+            </nav>
         </div>
     </div>
 </div>
@@ -310,14 +297,14 @@
               <div>
                 
   <div class="section" id="realisation-pratique">
-<h1><span class="section-number">2. </span>Réalisation pratique<a class="headerlink" href="#realisation-pratique" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">4. </span>Réalisation pratique<a class="headerlink" href="#realisation-pratique" title="Permalink to this headline">¶</a></h1>
 <p>Un goniomètre est un appareil qui sert à effectuer des mesures d’angles (de gônia <code class="docutils literal notranslate"><span class="pre">angle''</span> <span class="pre">et</span> <span class="pre">metron</span> </code>mesure, évaluation’’). Il possède une plateforme pouvant tourner autour d’un axe et sur laquelle on placera un dispositif permettant de disperser la lumière: en 1ère année, un prisme. Un collimateur permet d’éclairer le prisme par un faisceau de lumière parallèle, le faisceau émergent pouvant être visé par une lunette autocollimatrice réglée à l’infini. L’oculaire de la lunette est muni d’un réticule pour réaliser le pointage du faisceau émergent. Un système de graduation sous la lunette permet une lecture de la position angulaire de la lunette.</p>
 <div class="figure align-center" id="goniometre">
 <img alt="../_images/AnalyseSpec_Goniometre_Schema.jpg" src="../_images/AnalyseSpec_Goniometre_Schema.jpg" />
-<p class="caption"><span class="caption-number">Fig. 2.3 </span><span class="caption-text">Goniomètre</span><a class="headerlink" href="#goniometre" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4.1 </span><span class="caption-text">Goniomètre</span><a class="headerlink" href="#goniometre" title="Permalink to this image">¶</a></p>
 </div>
 <div class="section" id="reglage-du-goniometre-30-min">
-<h2><span class="section-number">2.1. </span>Réglage du goniomètre (30 min)<a class="headerlink" href="#reglage-du-goniometre-30-min" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.1. </span>Réglage du goniomètre (30 min)<a class="headerlink" href="#reglage-du-goniometre-30-min" title="Permalink to this headline">¶</a></h2>
 <p>Un goniomètre nécessite deux types de réglages :</p>
 <ul class="simple">
 <li><p>des réglages optiques : réglage de la lunette (par auto-collimation) et du collimateur (grâce à la lunette).</p></li>
@@ -328,11 +315,11 @@
 <p>Ne pas passer trop de temps sur ces réglages, le but est surtout de manipuler.</p>
 </div>
 <div class="section" id="reglage-de-la-lunette-autocollimatrice">
-<h3><span class="section-number">2.1.1. </span>Réglage de la lunette autocollimatrice<a class="headerlink" href="#reglage-de-la-lunette-autocollimatrice" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">4.1.1. </span>Réglage de la lunette autocollimatrice<a class="headerlink" href="#reglage-de-la-lunette-autocollimatrice" title="Permalink to this headline">¶</a></h3>
 <p>Une lunette autocollimatrice a pour rôle de permettre d’observer un objet à l’infini, grossi (rappel: l’étendue transversale d’un objet ou d’une image à l’infini est caractérisée par un angle). Comme l’observation se fait à l’oeil, la dernière image formée par la lunette doit être à l’infini elle aussi. Il s’agit donc d’un système afocal. Elle est constituée d’un objectif, d’un réticule et d’un oculaire (voir schéma ci-dessous). La distance réticule-oculaire est réglable, ainsi que la distance objectif-{réticule+oculaire} (bagues de réglage). Une lampe intégrée (source 6V) et une lame semi-réfléchissante qui peut être basculée à <span class="math notranslate nohighlight">\(45^{\circ}\)</span> permettent, si besoin, d’éclairer de côté.</p>
 <div class="figure align-center" id="lunette-auto">
 <img alt="../_images/AnalyseSpec_Lunette_Reglages.jpg" src="../_images/AnalyseSpec_Lunette_Reglages.jpg" />
-<p class="caption"><span class="caption-number">Fig. 2.4 </span><span class="caption-text">Lunette auto-collimatrice.</span><a class="headerlink" href="#lunette-auto" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Lunette auto-collimatrice.</span><a class="headerlink" href="#lunette-auto" title="Permalink to this image">¶</a></p>
 </div>
 <div class="tip admonition">
 <p class="admonition-title">Manipulation préliminaire</p>
@@ -349,7 +336,7 @@
 </div>
 </div>
 <div class="section" id="reglage-du-collimateur">
-<h3><span class="section-number">2.1.2. </span>Réglage du collimateur<a class="headerlink" href="#reglage-du-collimateur" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">4.1.2. </span>Réglage du collimateur<a class="headerlink" href="#reglage-du-collimateur" title="Permalink to this headline">¶</a></h3>
 <p>Le rôle d’un collimateur est de former un objet à l’infini. Il est constitué d’un objectif et d’un objet (qui dans ce TP une fente F de largeur et d’orientation réglables), éclairé par une source placée en amont. Régler le collimateur consiste à ajuster la distance objet-objectif pour amener l’objet (fente ici) dans le plan focal objet de l’objectif. On obtiendra alors une image nette de la fente à l’infini.</p>
 <div class="tip admonition">
 <p class="admonition-title">Manipulation préliminaire</p>
@@ -361,7 +348,7 @@
 </div>
 </div>
 <div class="section" id="direction-du-faisceau-incident">
-<h3><span class="section-number">2.1.3. </span>Direction du faisceau incident<a class="headerlink" href="#direction-du-faisceau-incident" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">4.1.3. </span>Direction du faisceau incident<a class="headerlink" href="#direction-du-faisceau-incident" title="Permalink to this headline">¶</a></h3>
 <p>Nous allons déterminer la direction du faisceau incident (non dévié par le prisme) pour se donner une origine des graduations angulaires. Cette origine correspond à la direction de propagation du faisceau sur le prisme.</p>
 <div class="tip admonition">
 <p class="admonition-title">Manipulation préliminaire</p>
@@ -372,14 +359,14 @@
 </div>
 </div>
 <div class="section" id="orientation-de-la-plateforme-et-de-la-lunette">
-<h3><span class="section-number">2.1.4. </span>Orientation de la plateforme et de la lunette<a class="headerlink" href="#orientation-de-la-plateforme-et-de-la-lunette" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">4.1.4. </span>Orientation de la plateforme et de la lunette<a class="headerlink" href="#orientation-de-la-plateforme-et-de-la-lunette" title="Permalink to this headline">¶</a></h3>
 <p>Ces réglages n’étant pas au programme, appeler le professeur pour qu’il les réalise.</p>
 </div>
 </div>
 <div class="section" id="goniometre-a-prisme">
-<h2><span class="section-number">2.2. </span>Goniomètre à prisme<a class="headerlink" href="#goniometre-a-prisme" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.2. </span>Goniomètre à prisme<a class="headerlink" href="#goniometre-a-prisme" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="mesure-de-l-angle-a">
-<h3><span class="section-number">2.2.1. </span>Mesure de l’angle A<a class="headerlink" href="#mesure-de-l-angle-a" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">4.2.1. </span>Mesure de l’angle A<a class="headerlink" href="#mesure-de-l-angle-a" title="Permalink to this headline">¶</a></h3>
 <div class="tip admonition">
 <p class="admonition-title">Manipulation</p>
 <ol class="simple">
@@ -401,7 +388,7 @@
 </div>
 </div>
 <div class="section" id="observation-qualitative-du-minimum-de-deviation">
-<h3><span class="section-number">2.2.2. </span>Observation qualitative du minimum de déviation<a class="headerlink" href="#observation-qualitative-du-minimum-de-deviation" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">4.2.2. </span>Observation qualitative du minimum de déviation<a class="headerlink" href="#observation-qualitative-du-minimum-de-deviation" title="Permalink to this headline">¶</a></h3>
 <p>Le goniomètre est maintenant réglé, l’angle <span class="math notranslate nohighlight">\(\theta_0\)</span> mesuré et le prisme posé correctement.</p>
 <div class="tip admonition">
 <p class="admonition-title">Manipulation : Variation de la déviation en fonction de l’angle d’incidence</p>
@@ -417,7 +404,7 @@
 </div>
 </div>
 <div class="section" id="minimum-de-deviation-et-longueur-d-onde">
-<h3><span class="section-number">2.2.3. </span>Minimum de déviation et longueur d’onde<a class="headerlink" href="#minimum-de-deviation-et-longueur-d-onde" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">4.2.3. </span>Minimum de déviation et longueur d’onde<a class="headerlink" href="#minimum-de-deviation-et-longueur-d-onde" title="Permalink to this headline">¶</a></h3>
 <p>Vous venez d’observer l’existence d’un minimum de déviation <span class="math notranslate nohighlight">\(D_m\)</span>, unique pour une onde monochromatique. Nous allons maintenant déterminer le minimum de déviation pour chaque longueur d’onde du mercure. Cette étude servira d’étalonnage pour mesurer la longueur d’onde du doublet du sodium.</p>
 <p>On donne les longueurs d’onde des raies du mercure :</p>
 <p>|Intensité | Couleur | Longueur d’onde (nm) |
@@ -461,7 +448,7 @@ n(\lambda)=a+\frac{b}{\lambda^2}
 </div>
 </div>
 <div class="section" id="application-a-la-spectrometrie">
-<h3><span class="section-number">2.2.4. </span>Application à la spectrométrie<a class="headerlink" href="#application-a-la-spectrometrie" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">4.2.4. </span>Application à la spectrométrie<a class="headerlink" href="#application-a-la-spectrometrie" title="Permalink to this headline">¶</a></h3>
 <p>La spectrométrie consiste à déterminer le spectre d’un signal lumineux. On va déterminer la longueur d’onde du doublet du sodium attendu théoriquement aux <strong>longueurs d’onde 589,0nm et 589,6nm</strong>.</p>
 <div class="tip admonition">
 <p class="admonition-title">Manipulation</p>
@@ -487,7 +474,7 @@ n(\lambda)=a+\frac{b}{\lambda^2}
 </div>
 </div>
 <div class="section" id="augmentation-de-la-resolution-utilisation-d-un-reseau">
-<h2><span class="section-number">2.3. </span>Augmentation de la résolution: utilisation d’un réseau<a class="headerlink" href="#augmentation-de-la-resolution-utilisation-d-un-reseau" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.3. </span>Augmentation de la résolution: utilisation d’un réseau<a class="headerlink" href="#augmentation-de-la-resolution-utilisation-d-un-reseau" title="Permalink to this headline">¶</a></h2>
 <p>Remplacer le prisme par le réseau à disposition (<em>en toute rigueur, on devrait recommencer les réglages d’orientation mais on ne le fera pas ici par manque de temps, vérifier simplement que vous observer des raies en sortie</em>).</p>
 <p>Comme précédemment, la mesure est plus précise au minimum de déviation mais pour gagner du temps sur l’exploitation. On va se placer en incidence normale <span class="math notranslate nohighlight">\(i = 0\)</span>.</p>
 <div class="tip admonition">
@@ -525,8 +512,8 @@ n(\lambda)=a+\frac{b}{\lambda^2}
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="anspec_optique_preliminaire.html" title="previous page"><span class="section-number">1. </span>Etude préliminaire</a>
-    <a class='right-next' id="next-link" href="anspec_elec_wobulation.html" title="next page"><span class="section-number">1. </span>Wobulation en pratique</a>
+    <a class='left-prev' id="prev-link" href="anspec_optique_preliminaire.html" title="previous page"><span class="section-number">3. </span>Etude préliminaire</a>
+    <a class='right-next' id="next-link" href="anspec_elec_wobulation.html" title="next page"><span class="section-number">5. </span>Wobulation en pratique</a>
 
         </div>
         
@@ -547,11 +534,9 @@ n(\lambda)=a+\frac{b}{\lambda^2}
 
       </div>
     </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    
+  
   </body>
 </html>
