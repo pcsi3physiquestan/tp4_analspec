@@ -372,19 +372,8 @@
 <ol class="simple">
 <li><p>Expliquer comment peut-on utiliser le d’autocollimation de la lunette (éclairage interne) pour déterminer l’angle correspond à la normale d’une face du prisme.</p></li>
 <li><p>Proposez une méthode, utilisant la détermination de l’orientation des faces, pour mesurer l’angle A au sommet du prisme.</p></li>
-<li><p>Réaliser cette manipulation et utiliser la cellule ci-dessous pour obtenir l’incertitude sur <span class="math notranslate nohighlight">\(A\)</span> <strong>par propagation des variances.</strong> à partit des mesurandes directs et de leurs incertitudes.</p></li>
+<li><p>Réaliser cette manipulation et obtenir l’incertitude sur <span class="math notranslate nohighlight">\(A\)</span> <strong>par propagation des variances</strong> à partir des mesurandes directs et de leurs incertitudes.</p></li>
 </ol>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;Ne pas oublier les bibliothèques scientifiques&quot;&quot;&quot;</span>
-
-
-<span class="n">A</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># Stocker la valeur de A dans cette variables</span>
-<span class="n">uA</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># Stocker l&#39;incertitude sur A dans cette variables</span>
-</pre></div>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="observation-qualitative-du-minimum-de-deviation">
@@ -455,19 +444,19 @@ n(\lambda)=a+\frac{b}{\lambda^2}
 <p class="admonition-title">Manipulation : Etalonnage</p>
 <ol class="simple">
 <li><p>Déterminez la déviation minimale <span class="math notranslate nohighlight">\(D_m(\lambda)\)</span> pour chacune des raies du spectre visible du mercure ainsi que les incertitudes sur <span class="math notranslate nohighlight">\(D_m\)</span> (pour chaque source non négligeable).</p></li>
-<li><p>Utiliser la cellule ci-dessous pour déterminer les incertitudes sur les Dm, les indices de réfraction <span class="math notranslate nohighlight">\(n\)</span> associés et leur incertitude. On utilisera une méthode de Monte-Carlo.</p></li>
+<li><p>Utiliser la cellule ci-dessous pour déterminer les incertitudes sur les Dm, les indices de réfraction <span class="math notranslate nohighlight">\(n\)</span> associés et leur incertitude. On utilisera une méthode de Monte-Carlo car les relations entre les grandeurs ne sont pas du tout linéaires.</p></li>
 <li><p>Obtenir les coefficient <span class="math notranslate nohighlight">\(a\)</span> et <span class="math notranslate nohighlight">\(b\)</span> du modèle de Cauchy pour le prisme par régression linéaire. On pensera à vérifier avant et après régression la cohérence du modèle et à réaliser les représentations graphiques nécessaires.</p></li>
 </ol>
 </div>
 <p><strong>Pensez à stocker les vecteurs ou tableaux des N simulations pour utilisation ultérieur.</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;Les bibliothèqes scientifiques ont normalement déjà été importées&quot;&quot;&quot;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;Ne pas oublier les bibliothèques scientifiques&quot;&quot;&quot;</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Les bibliothèqes scientifiques ont normalement déjà été importées&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Ne pas oublier les bibliothèques scientifiques&#39;
 </pre></div>
 </div>
 </div>
@@ -507,7 +496,7 @@ n(\lambda)=a+\frac{b}{\lambda^2}
 <p class="admonition-title">Manipulation</p>
 <ol class="simple">
 <li><p>Sachant que pour <span class="math notranslate nohighlight">\(p=0\)</span>, <span class="math notranslate nohighlight">\(i=\theta\)</span> et que le réseau est partiellement réfléchissant. Proposer une méthode utilisant l’éclairage interne de la lunette pour bien placer le réseau tel qu’on soit en incidence normale puis réaliser cette manipulation.</p></li>
-<li><p>Proposer puis réaliser un protocole permettant permettant de remonter aux valeurs des deux longueurs d’onde du doublet.</p></li>
+<li><p>Proposer puis réaliser un protocole permettant permettant de remonter aux valeurs des deux longueurs d’onde du doublet (il n’est pas demandé de calcul d’incertitude).</p></li>
 </ol>
 </div>
 </div>
