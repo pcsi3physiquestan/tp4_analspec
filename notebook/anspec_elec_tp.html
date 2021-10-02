@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2. Réalisation pratique &#8212; TP Analyse spectrale</title>
+    <title>2. (TP) Réalisation pratique &#8212; TP Analyse spectrale</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -103,7 +103,7 @@
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   2. Réalisation pratique
+   2. (TP) Réalisation pratique
   </a>
  </li>
 </ul>
@@ -120,7 +120,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="anspec_optique_tp.html">
-   4. Réalisation pratique
+   4. (TP) Réalisation pratique
   </a>
  </li>
 </ul>
@@ -269,8 +269,8 @@
         
               <div>
                 
-  <div class="section" id="realisation-pratique">
-<h1><span class="section-number">2. </span>Réalisation pratique<a class="headerlink" href="#realisation-pratique" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="tp-realisation-pratique">
+<h1><span class="section-number">2. </span>(TP) Réalisation pratique<a class="headerlink" href="#tp-realisation-pratique" title="Permalink to this headline">¶</a></h1>
 <p>L’objectif du TP est de construire un analyseur de spectre analogique, c’est-à-dire un dispositif capable de tracer (ici à l’oscilloscope) le spectre d’un signal électrique entrant.</p>
 <div class="section" id="etude-de-chaque-etage">
 <h2><span class="section-number">2.1. </span>Etude de chaque étage<a class="headerlink" href="#etude-de-chaque-etage" title="Permalink to this headline">¶</a></h2>
@@ -320,8 +320,8 @@
 <h3><span class="section-number">2.1.4. </span>Analyse manuelle d’un signal créneau<a class="headerlink" href="#analyse-manuelle-d-un-signal-creneau" title="Permalink to this headline">¶</a></h3>
 <p>On peut maintenant réaliser l’analyse spectrale de différents signaux <span class="math notranslate nohighlight">\(e(t)\)</span>. Le signal <span class="math notranslate nohighlight">\(e(t)\)</span> que nous allons analyser est un créneau symétrique, de valeur moyenne nulle, et de fréquence 200Hz et d’amplitude 5V. <strong>ATTENTION AUX PHENOMENES DE SATURATION – DIMINUER L’AMPLITUDE DE <span class="math notranslate nohighlight">\(e(t)\)</span> SI BESOIN MAIS SURTOUT PAS DE <span class="math notranslate nohighlight">\(v(t)\)</span></strong> (à cause de l’étalonnage).</p>
 <p>On rappelle la décomposition de Fourier d’un signal créneau de période T et d’amplitude <span class="math notranslate nohighlight">\(E_0\)</span> :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fe08683b-a7d3-4603-b501-552882400611">
-<span class="eqno">(2.1)<a class="headerlink" href="#equation-fe08683b-a7d3-4603-b501-552882400611" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-13e0027f-a442-4bb9-af47-f408900a5db9">
+<span class="eqno">(2.1)<a class="headerlink" href="#equation-13e0027f-a442-4bb9-af47-f408900a5db9" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   e(t) = \frac{4E_0}{\pi} \sum\limits_{p=0}^{+\infty} \frac{1}{2p+1} \sin((2p+1)\frac{2 \pi}{T}t)
 \end{equation}\]</div>
 <p>Cette analyse manuelle permettra de bien comprendre le principe de sélection de l’analyseur.</p>
@@ -359,7 +359,7 @@
 <p class="admonition-title">Manipulation</p>
 <ol class="simple">
 <li><p>Proposer des valeurs cohérentes pour R et C avec les contraintes imposées.</p></li>
-<li><p>Observer alors le tracé expérimental du spectre et retrouver les valeurs des fréquence du fondamental et des harmoniques des signaux avec leurs incertitudes. Représenter graphiquement (à la main) le spectre avecles incertitudes.</p></li>
+<li><p>Observer alors le tracé expérimental du spectre et retrouver les valeurs des fréquence du fondamental et des harmoniques des signaux avec leurs incertitudes (on utilisera <strong>la propagation des variances</strong> pour estimer les incertitudes des mesurandes indirectes). Représenter graphiquement (à la main) le spectre avecles incertitudes.</p></li>
 </ol>
 </div>
 </div>
