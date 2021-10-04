@@ -291,13 +291,13 @@
 \[\begin{align*}
   f_0 &amp;= \frac{1}{2 \pi C} \sqrt{\frac{R_1+R_2}{R_1R_2R_3}}\\
   \Delta f &amp;= \frac{1}{\pi R_3 C}\\
-  H_{\max}=\frac{R_3}{2R_1}
+  H_{\max}&amp;=\frac{R_3}{2R_1}
 \end{align*}\]</div>
 </div>
 </div>
 <div class="section" id="etude-du-multiplieur">
 <h3><span class="section-number">2.1.2. </span>Etude du multiplieur<a class="headerlink" href="#etude-du-multiplieur" title="Permalink to this headline">¶</a></h3>
-<p>Le principe et l’utilisation du multiplieur a déjà été réalisée précédemment. Vérifier simplement son bon fonctionnement en vérifiant que la multiplicatino de deux signaux de fréquences éloignées (<em>ce ne sera pas le cas ensuite par contre</em>) réalise bien une modulation d’amplitude.</p>
+<p>Le principe et l’utilisation du multiplieur a déjà été réalisée précédemment. Vérifier simplement son bon fonctionnement en vérifiant que la multiplication de deux signaux de fréquences éloignées (<em>ce ne sera pas le cas ensuite par contre</em>) réalise bien une modulation d’amplitude.</p>
 <ul class="simple">
 <li><p>Le multiplieur a un coefficient de multiplication d’environ <span class="math notranslate nohighlight">\(k=0,1\rm{V^{-1}}\)</span></p></li>
 <li><p>On rappelle qu’il doit être alimenté par une alimentation symétrique.</p></li>
@@ -311,8 +311,9 @@
 <li><p>Réaliser le montage complet et choisir comme signal <span class="math notranslate nohighlight">\(e(t)\)</span> à analyser un signal sinusoïdal de fréquence <span class="math notranslate nohighlight">\(500Hz\)</span>.</p></li>
 <li><p>Prendre pour <span class="math notranslate nohighlight">\(v(t)\)</span> un signal sinusoïdal d’amplitude 5V. On démarrera avec une fréquence <span class="math notranslate nohighlight">\(f_0\)</span> pour <span class="math notranslate nohighlight">\(v(t)\)</span>.</p></li>
 <li><p>Visualiser à l’oscilloscope les tensions <span class="math notranslate nohighlight">\(e(t)\)</span> et <span class="math notranslate nohighlight">\(s(t)\)</span>. Quand on fait varier la fréquence <span class="math notranslate nohighlight">\(f_v\)</span> (avec on le rappelle <span class="math notranslate nohighlight">\(f_v \geq f_0\)</span>), observe-t-on ce qu’on attend théoriquement? On précisera les similitudes et les différences.</p></li>
-<li><p>À l’aide de l’analyseur de spectre que vous avec monté, vérifier la(les) fréquence(s) contenues dans <span class="math notranslate nohighlight">\(e(t)\)</span>.</p></li>
+<li><p>À l’aide de l’analyseur de spectre que vous avez monté, vérifier la(les) fréquence(s) contenues dans <span class="math notranslate nohighlight">\(e(t)\)</span>.</p></li>
 <li><p>Étalonner l’analyseur de spectre en déterminant le rapport <span class="math notranslate nohighlight">\(G_T =S / E\)</span> (où S est l’amplitude du signal de sortie <span class="math notranslate nohighlight">\(s(t)\)</span> et E celle du signal d’entrée <span class="math notranslate nohighlight">\(e(t)\)</span>) lorsque S est maximale. Rappeler pourquoi peut-on considérer que ce rapport sera le même quelque soit le signal et quelque soit la composante fréquentielle observée? En pratique, quelle sont les limites de cette hypothèse?</p></li>
+<li><p>Estimer l’incertitude sur <span class="math notranslate nohighlight">\(G_T\)</span> par propagation des variances.</p></li>
 </ol>
 </div>
 </div>
@@ -320,8 +321,8 @@
 <h3><span class="section-number">2.1.4. </span>Analyse manuelle d’un signal créneau<a class="headerlink" href="#analyse-manuelle-d-un-signal-creneau" title="Permalink to this headline">¶</a></h3>
 <p>On peut maintenant réaliser l’analyse spectrale de différents signaux <span class="math notranslate nohighlight">\(e(t)\)</span>. Le signal <span class="math notranslate nohighlight">\(e(t)\)</span> que nous allons analyser est un créneau symétrique, de valeur moyenne nulle, et de fréquence 200Hz et d’amplitude 5V. <strong>ATTENTION AUX PHENOMENES DE SATURATION – DIMINUER L’AMPLITUDE DE <span class="math notranslate nohighlight">\(e(t)\)</span> SI BESOIN MAIS SURTOUT PAS DE <span class="math notranslate nohighlight">\(v(t)\)</span></strong> (à cause de l’étalonnage).</p>
 <p>On rappelle la décomposition de Fourier d’un signal créneau de période T et d’amplitude <span class="math notranslate nohighlight">\(E_0\)</span> :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-13e0027f-a442-4bb9-af47-f408900a5db9">
-<span class="eqno">(2.1)<a class="headerlink" href="#equation-13e0027f-a442-4bb9-af47-f408900a5db9" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-d50928c4-9348-4665-8fec-32e4b87d7c49">
+<span class="eqno">(2.1)<a class="headerlink" href="#equation-d50928c4-9348-4665-8fec-32e4b87d7c49" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   e(t) = \frac{4E_0}{\pi} \sum\limits_{p=0}^{+\infty} \frac{1}{2p+1} \sin((2p+1)\frac{2 \pi}{T}t)
 \end{equation}\]</div>
 <p>Cette analyse manuelle permettra de bien comprendre le principe de sélection de l’analyseur.</p>
@@ -329,7 +330,7 @@
 <p class="admonition-title">Manipulation</p>
 <ol class="simple">
 <li><p>Préciser le protocole permettant de déterminer les fréquences et les amplitudes du fondamental et des harmoniques du signal.</p></li>
-<li><p>Réaliser les mesures pour le fondamental et une harmonique. Commenter la précision des mesures? Quels sont les facteurs qui causent ces imprécisions?</p></li>
+<li><p>Réaliser les mesures pour le fondamental et une harmonique. Commenter la précision des mesures? Quels sont les facteurs qui causent ces imprécisions? (On ne demande pas de mesure d’incertitude).</p></li>
 </ol>
 </div>
 </div>
@@ -341,7 +342,7 @@
 <p class="admonition-title">Manipulation préliminaire</p>
 <ol class="simple">
 <li><p>Débrancher le GBF délivrant <span class="math notranslate nohighlight">\(v(t)\)</span> du circuit et observer ce signal sur l’oscilloscope.</p></li>
-<li><p>Activer la wobulation en démarrant à <span class="math notranslate nohighlight">\(f_0\)</span> jusqu’à <span class="math notranslate nohighlight">\(5kHz\)</span> en faisant en sorte que le balyage en fréquence dure 1 secondes. Des explications sur les réglages sont donnés <a class="reference internal" href="anspec_elec_wobulation.html#wobulation"><span class="std std-ref">ici</span></a>.</p></li>
+<li><p>Activer la wobulation en démarrant à <span class="math notranslate nohighlight">\(f_0\)</span> jusqu’à <span class="math notranslate nohighlight">\(5kHz\)</span> en faisant en sorte que le balyage en fréquence dure 1 secondes. Des explications sur les réglages sont donnés <a class="reference internal" href="anspec_elec_wobulation.html#wobulation"><span class="std std-ref">ici</span></a>. On déterminera la relation <span class="math notranslate nohighlight">\(u(f)\)</span> donnant la tension délivrée par la sortie <code class="docutils literal notranslate"><span class="pre">SWEEP</span> <span class="pre">IN/OUT</span></code> en fonction de la fréquence.</p></li>
 <li><p>Observer que la fréquence du signal varie effectivement au cours du temps. Vous pouvez rebrancher le GBF sur le multiplier et observer la sortie. Observe-t-on “l’amplitude” en sortie ?</p></li>
 </ol>
 </div>
@@ -359,7 +360,7 @@
 <p class="admonition-title">Manipulation</p>
 <ol class="simple">
 <li><p>Proposer des valeurs cohérentes pour R et C avec les contraintes imposées.</p></li>
-<li><p>Observer alors le tracé expérimental du spectre et retrouver les valeurs des fréquence du fondamental et des harmoniques des signaux avec leurs incertitudes (on utilisera <strong>la propagation des variances</strong> pour estimer les incertitudes des mesurandes indirectes). Représenter graphiquement (à la main) le spectre avecles incertitudes.</p></li>
+<li><p>Observer alors le tracé expérimental du spectre et retrouver les valeurs des fréquence du fondamental et des harmoniques des signaux avec leurs incertitudes (on utilisera <strong>la propagation des variances</strong> pour estimer les incertitudes des mesurandes indirectes). Représenter graphiquement (à la main) le spectre avec les incertitudes.</p></li>
 </ol>
 </div>
 </div>
