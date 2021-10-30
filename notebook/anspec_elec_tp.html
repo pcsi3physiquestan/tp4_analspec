@@ -321,8 +321,8 @@
 <h3><span class="section-number">2.1.4. </span>Analyse manuelle d’un signal créneau<a class="headerlink" href="#analyse-manuelle-d-un-signal-creneau" title="Permalink to this headline">¶</a></h3>
 <p>On peut maintenant réaliser l’analyse spectrale de différents signaux <span class="math notranslate nohighlight">\(e(t)\)</span>. Le signal <span class="math notranslate nohighlight">\(e(t)\)</span> que nous allons analyser est un créneau symétrique, de valeur moyenne nulle, et de fréquence 200Hz et d’amplitude 5V. <strong>ATTENTION AUX PHENOMENES DE SATURATION – DIMINUER L’AMPLITUDE DE <span class="math notranslate nohighlight">\(e(t)\)</span> SI BESOIN MAIS SURTOUT PAS DE <span class="math notranslate nohighlight">\(v(t)\)</span></strong> (à cause de l’étalonnage).</p>
 <p>On rappelle la décomposition de Fourier d’un signal créneau de période T et d’amplitude <span class="math notranslate nohighlight">\(E_0\)</span> :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d50928c4-9348-4665-8fec-32e4b87d7c49">
-<span class="eqno">(2.1)<a class="headerlink" href="#equation-d50928c4-9348-4665-8fec-32e4b87d7c49" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-ef4d0bc9-8b37-45d1-a615-41fc285fcb63">
+<span class="eqno">(2.1)<a class="headerlink" href="#equation-ef4d0bc9-8b37-45d1-a615-41fc285fcb63" title="Permalink to this equation">¶</a></span>\[\begin{equation}
   e(t) = \frac{4E_0}{\pi} \sum\limits_{p=0}^{+\infty} \frac{1}{2p+1} \sin((2p+1)\frac{2 \pi}{T}t)
 \end{equation}\]</div>
 <p>Cette analyse manuelle permettra de bien comprendre le principe de sélection de l’analyseur.</p>
@@ -343,7 +343,7 @@
 <ol class="simple">
 <li><p>Débrancher le GBF délivrant <span class="math notranslate nohighlight">\(v(t)\)</span> du circuit et observer ce signal sur l’oscilloscope.</p></li>
 <li><p>Activer la wobulation en démarrant à <span class="math notranslate nohighlight">\(f_0\)</span> jusqu’à <span class="math notranslate nohighlight">\(5kHz\)</span> en faisant en sorte que le balyage en fréquence dure 1 secondes. Des explications sur les réglages sont donnés <a class="reference internal" href="anspec_elec_wobulation.html#wobulation"><span class="std std-ref">ici</span></a>. On déterminera la relation <span class="math notranslate nohighlight">\(u(f)\)</span> donnant la tension délivrée par la sortie <code class="docutils literal notranslate"><span class="pre">SWEEP</span> <span class="pre">IN/OUT</span></code> en fonction de la fréquence.</p></li>
-<li><p>Observer que la fréquence du signal varie effectivement au cours du temps. Vous pouvez rebrancher le GBF sur le multiplier et observer la sortie. Observe-t-on “l’amplitude” en sortie ?</p></li>
+<li><p>Observer que la fréquence du signal varie effectivement au cours du temps. Vous pouvez rebrancher le GBF sur le multiplieur et observer la sortie. Observe-t-on “l’amplitude” en sortie ?</p></li>
 </ol>
 </div>
 <p>Pour palier à ce problème, on propose de placer un <a class="reference internal" href="#detecteur"><span class="std std-ref">montage détecteur de crête</span></a> en sortie.</p>
