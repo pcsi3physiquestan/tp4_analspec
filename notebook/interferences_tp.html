@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. Etude préliminaire &#8212; TP Analyse spectrale</title>
+    <title>6. Travaux pratiques &#8212; TP Analyse spectrale</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -42,8 +42,6 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -51,11 +49,10 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://pcsi3physiquestan.github.io/tp4_analspec/notebook/anspec_optique_preliminaire.html" />
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/tp4_analspec/notebook/interferences_tp.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2. (TP) Réalisation pratique" href="anspec_optique_tp.html" />
-    <link rel="prev" title="Ondes" href="../tp4_analspec.html" />
+    <link rel="prev" title="5. Préliminaires" href="interferences_preliminaire.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -99,9 +96,9 @@
   Analyse d'un signal lumineux
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="anspec_optique_preliminaire.html">
    1. Etude préliminaire
   </a>
  </li>
@@ -133,14 +130,14 @@
   Intérférences
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="interferences_preliminaire.html">
    5. Préliminaires
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="interferences_tp.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    6. Travaux pratiques
   </a>
  </li>
@@ -184,11 +181,11 @@
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         <a class="dropdown-buttons"
-            href="../_sources/notebook/anspec_optique_preliminaire.ipynb"><button type="button"
+            href="../_sources/notebook/interferences_tp.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/notebook/anspec_optique_preliminaire.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/notebook/interferences_tp.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -213,7 +210,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/anspec_optique_preliminaire.md"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/interferences_tp.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -236,14 +233,36 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#goniometre-a-reseau">
-   1.1. Goniomètre à réseau
+  <a class="reference internal nav-link" href="#analyse-du-spectre-de-differentes-sources-lumineuses">
+   6.1. Analyse du spectre de différentes sources lumineuses
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#goniometre-a-prisme">
-   1.2. Goniomètre à prisme
+  <a class="reference internal nav-link" href="#etude-de-la-diffraction">
+   6.2. Etude de la diffraction
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#etude-des-interferences">
+   6.3. Etude des interférences.
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#etude-a-distance-finie">
+     6.3.1. Etude à distance finie
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#etude-a-l-infini">
+     6.3.2. Etude à l’infini
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#complement-perte-de-coherence">
+     6.3.3. Complément : Perte de cohérence
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -256,30 +275,78 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="etude-preliminaire">
-<h1><span class="section-number">1. </span>Etude préliminaire<a class="headerlink" href="#etude-preliminaire" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="goniometre-a-reseau">
-<h2><span class="section-number">1.1. </span>Goniomètre à réseau<a class="headerlink" href="#goniometre-a-reseau" title="Permalink to this headline">¶</a></h2>
-<p>La théorie sous-jacente est vue dans le cours sur les ondes. On retiendra que :</p>
-<ul class="simple">
-<li><p>le réseau est constité d’un grande nombre de fentes (comme les fentes d’Young). Il est caractérisé par N, le nombre de fente par unité de longueur. Comme un grand nombre de rayons sortent de ces fentes, ils vont interférer.</p></li>
-<li><p>Il existe dans conditions sur l’angle en sortie pour observer des interférences constructives :</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[\sin \theta = \sin i + p N \lambda\]</div>
-<p>où <span class="math notranslate nohighlight">\(i\)</span> est l’angle du faisceau incident sur le réseau, <span class="math notranslate nohighlight">\(\theta\)</span> l’angle du faisceau sortant donnant lieu à des interférences constructives, <span class="math notranslate nohighlight">\(\lambda\)</span> la longueur du faisceau et <span class="math notranslate nohighlight">\(p\)</span> un nombre entier relatif appelé <strong>ordre d’interférence.</strong></p>
-<p>Pour chaque ordre <span class="math notranslate nohighlight">\(p=-2, p=-1, p=0, p=1, p=2...\)</span> on observera des interférences constructives : une raie lumineuse de la couleur correspondant à <span class="math notranslate nohighlight">\(\lambda\)</span>. Comme <span class="math notranslate nohighlight">\(\theta\)</span> dépend de <span class="math notranslate nohighlight">\(\lambda\)</span> on peut distinguer plusieurs composantes spectrales d’un même signal lumineux.</p>
-<p><em>La démonstration de la relatino des réseaux est identique à la recherche d’interférence constructives entree 2 fentes (s’il y a interférences constructives entre deux fentes successives, il y aura interférences constructives entre toutes les fentes). La distance entre les deux fentes étant alors <span class="math notranslate nohighlight">\(a = \frac{1}{N}\)</span>, on retrouve la relation proposée.</em> <strong>S’entrainer à la retrouver.</strong></p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="travaux-pratiques">
+<h1><span class="section-number">6. </span>Travaux pratiques<a class="headerlink" href="#travaux-pratiques" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="analyse-du-spectre-de-differentes-sources-lumineuses">
+<h2><span class="section-number">6.1. </span>Analyse du spectre de différentes sources lumineuses<a class="headerlink" href="#analyse-du-spectre-de-differentes-sources-lumineuses" title="Permalink to this headline">¶</a></h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Les Lasers peuvent être extrêmement dangereux pour la vue. Il ne faut JAMAIS placé son oeil dans la direction de propagation du Laser et faire attention aux réflexions. Les lampes spectrales et les lampes à incandescence peuvent être très chaudes. Il faut les manipuler avec précautions et ne surtout pas toucher l’ampoule. D’une manière générale, le matériel d’optique est un matériel fragile qu’il faut manipuler avec soin.</p>
 </div>
-<div class="section" id="goniometre-a-prisme">
-<h2><span class="section-number">1.2. </span>Goniomètre à prisme<a class="headerlink" href="#goniometre-a-prisme" title="Permalink to this headline">¶</a></h2>
-<p>L’étude préliminaire a déjà été réalisée dans le cours d’optique. On reprendra l’exercice en s’attardant notamment sur les points suivants :</p>
+<div class="tip admonition">
+<p class="admonition-title">Obtenir différents spectre lumineux</p>
+<ol class="simple">
+<li><p>Eclairer le capteur au moyen de diverses sources lumineuses proposées et observer et décrire les spectres obtenus gr^ace à l’option ``Spectrographe’’.</p>
 <ul class="simple">
-<li><p>trajets qualitatif des rayons</p></li>
-<li><p>cas d’existence d’une réflexion totale</p></li>
-<li><p>existence d’un minimum de déviation et relation entre ce minimum et la longueur d’onde.</p></li>
+<li><p>Commencer par la lampe à incandescence pour vérifier que la correction du capteur est bien réalisée. Si l’intensité chute pour les couleurs rouge-orange, c’est que la correction du capteur n’a pas été réalisée correctement.</p></li>
+<li><p>Allumer la lampe spectrale (noter laquelle) quelques temps avant d’analyser son spectre car elle met un certain temps avant d’atteindre un régime permanent.</p></li>
+<li><p>Vérifier que le LASER arrive bien sur la fibre (attention, il peut y avoir saturation du capteur).</p></li>
 </ul>
-<p><strong>Il est aussi vivement conseillé de reprendre les instruments d’optique pour se rappeler le principe de fonctionnement et de réglage d’une lunette et d’un collimateur.</strong></p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="etude-de-la-diffraction">
+<h2><span class="section-number">6.2. </span>Etude de la diffraction<a class="headerlink" href="#etude-de-la-diffraction" title="Permalink to this headline">¶</a></h2>
+<p>Il s’agit d’une étude purement qualitative. On utilisera un LASER. <strong>Ne pas regarder le laser directement et attention aux réflexion.</strong></p>
+<div class="tip admonition">
+<p class="admonition-title">Etude de la diffraction</p>
+<ol class="simple">
+<li><p>Eclairer les fentes simples de taille différentes avec le LASER et observer l’évolution de la tâche centrale sur un écran situé à bonne distance. Commenter le profil d’intensité observé à chaque fois.</p></li>
+<li><p>Eclairer maintenant les trous simples et commenter à nouveau les observations.</p></li>
+<li><p>Remplacer l’écran par la barette CCD et observer le profil d’intensité lorsqu’on éclaire une fente. Mesurer rapidement la taille de la tâche de diffraction.</p></li>
+</ol>
+<p>Concernant la barette CCD:</p>
+<ul class="simple">
+<li><p>La berette n’est située qu’au centre du cercle. Pensez à centrer le faisceau.</p></li>
+<li><p>Il est possible qu’il faille faire tourner les polariseurs fixés sur le capteur pour éviter la saturation. Si ça n’est pas suffisant, ajouter deux polariseurs entre le laser et les fentes puis en faire tourner un pour diminuer l’amplitude.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="etude-des-interferences">
+<h2><span class="section-number">6.3. </span>Etude des interférences.<a class="headerlink" href="#etude-des-interferences" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="etude-a-distance-finie">
+<h3><span class="section-number">6.3.1. </span>Etude à distance finie<a class="headerlink" href="#etude-a-distance-finie" title="Permalink to this headline">¶</a></h3>
+<p>On utilise à nouveau le LASER.</p>
+<div class="tip admonition">
+<p class="admonition-title">Etude des interférences</p>
+<ol class="simple">
+<li><p>Eclairer les fentes doubles avec le LASER et mesurer l’interfrange sur un écran situé à une distance D. Vérifier que l’interfrange a à peu près la valeur attendue (on ne demande pas de calcul d’incertitude) dans le cadre d’étude théorique. __Attention à ne pas confondre les variations d’amplitude liées à la diffraction à celles liées aux interférences.</p></li>
+<li><p>Faire la même manipulation avec les autres fentes doubles.</p></li>
+<li><p>Remplacer l’écran par la barette CCD et reprendre la mesure précédente.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="etude-a-l-infini">
+<h3><span class="section-number">6.3.2. </span>Etude à l’infini<a class="headerlink" href="#etude-a-l-infini" title="Permalink to this headline">¶</a></h3>
+<p>Pour étudier la figure d’interférence à l’infini, on va la projeter sur un écran situé dans le plan focal image d’une lentille.</p>
+<div class="tip admonition">
+<p class="admonition-title">Distance focale de la lentille</p>
+<ol class="simple">
+<li><p>Commencer par éteindre le LASER et enlever le ainsi que le jeton d’interférences.</p></li>
+<li><p>En utilisant la lampe à LED. Réaliser un dispositif {lentille+écran} où l’écran est dans le plan focal image de la lentille. On prendra la lentille de plus grande focale à disposition (utiliser la valisette bleue).</p></li>
+<li><p>Enlever la lampe et replacer le LASER avec le jeton d’interférences.</p></li>
+<li><p>Observer la figure d’interférences et mesurer l’interférence. La comparer à la valeur attendue (sans incertitude à nouveau).</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="complement-perte-de-coherence">
+<h3><span class="section-number">6.3.3. </span>Complément : Perte de cohérence<a class="headerlink" href="#complement-perte-de-coherence" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Remplacer le LASER par une lampe au sodium et revenir à des interférences à une distance D. Observe-t-on encore correctement les interférences ? On utilisera un diaphragme à iris pour limiter l’éclairage à une seule double fente.
+Remplacer la lampe par une lampe à LED. Observe-t-on encore correctement les interférences ?</p>
+</div></blockquote>
+</div>
 </div>
 </div>
 
@@ -308,19 +375,12 @@
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../tp4_analspec.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="interferences_preliminaire.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Ondes</p>
+            <p class="prev-next-title"><span class="section-number">5. </span>Préliminaires</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="anspec_optique_tp.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2. </span>(TP) Réalisation pratique</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
         
